@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>com.wf2311.jclipper</groupId>
-        <artifactId>jclipper</artifactId>
+        <artifactId>jclipper-framework</artifactId>
         <version>2022.1-SNAPSHOT</version>
     </parent>
 
