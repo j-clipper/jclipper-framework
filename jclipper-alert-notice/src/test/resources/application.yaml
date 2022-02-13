@@ -1,0 +1,16 @@
+jclipper:
+  alert:
+    dingtalk: #钉钉告警配置
+      enable: true #是否启用钉钉告警，默认为false
+      token: xxx #钉钉告警的webhook token
+      at-mobiles: # 需要艾特的用户，使用数组形式进行指定（非必须）
+        - 122
+        - 123
+      at-all: false  #是否进行艾特全员，默认为false
+    work-wechat: #企业微信告警配置
+      enable: true  #是否启用企业微信告警，默认为false
+      token: xxx  #企业微信告警的webhook token
+      at-mobiles: # 需要艾特的用户，使用数组形式进行指定（非必须）
+        - 122
+        - 123
+      at-all: true  #是否进行艾特全员，默认为false

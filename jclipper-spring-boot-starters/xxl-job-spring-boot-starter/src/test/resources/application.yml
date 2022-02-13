@@ -1,0 +1,20 @@
+server:
+  port: 11009
+xxl:
+  job:
+    ### xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
+    admin-addresses: http://192.168.0.195:30844/
+
+    ### xxl-job, access token
+    access-token:
+    executor:
+      ### xxl-job executor appname
+      appname: test-xxl-job-executor-sample
+      port: ${server.port}
+      ### xxl-job executor log-path
+      logpath: ~/data/applogs/xxl-job/jobhandler
+      ### xxl-job executor log-retention-days
+      logretention-days: 30
+logging:
+  level:
+    root: info

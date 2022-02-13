@@ -1,0 +1,18 @@
+jclipper:
+  alert:
+    alert-when400-code: false #400错误是否需要进行告警，默认为false
+    env: test-20.2 #环境名称，例如：test-20.2,pre-207，非必填，当填写该值时，会在告警信息标题中显示环境名称
+    dingtalk: #钉钉告警配置
+     enable: true #是否启用钉钉告警，默认为false
+     token: <TOKEN> #钉钉告警的webhook token
+     at-mobiles: # 需要艾特的用户，使用数组形式进行指定（非必须）
+       - 18111234123
+       - 18111234124
+     at-all: false  #是否进行艾特全员，默认为false
+    work-wechat: #企业微信告警配置
+      enable: true  #是否启用企业微信告警，默认为false
+      token: <TOKEN>  #企业微信告警的webhook token
+      at-mobiles: # 需要艾特的用户，使用数组形式进行指定（非必须）
+        - 18111234123
+        - 18111234124
+      at-all: false  #是否进行艾特全员，默认为false

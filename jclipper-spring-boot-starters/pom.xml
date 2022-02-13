@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.wf2311.jclipper</groupId>
+        <artifactId>jclipper-framework-parent</artifactId>
+        <version>2022.1-SNAPSHOT</version>
+        <relativePath>../jclipper-framework-parent</relativePath>
+    </parent>
+    <artifactId>jclipper-spring-boot-starters</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>exception-handler-spring-boot-starter</module>
+        <module>java-time-converter-spring-boot-starter</module>
+        <module>lettuce-spring-boot-starter</module>
+        <module>swagger-spring-boot-starter</module>
+        <module>mongo-plus-spring-boot-starter</module>
+        <module>xxl-job-spring-boot-starter</module>
+        <module>dynamic-arthas-spring-boot-starter</module>
+        <module>validation-spring-boot-starter</module>
+    </modules>
+
+</project>

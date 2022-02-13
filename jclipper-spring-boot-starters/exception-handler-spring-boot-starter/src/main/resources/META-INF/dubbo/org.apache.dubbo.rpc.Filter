@@ -1,0 +1,1 @@
+dubboExceptionFilter=jclipper.springboot.exception.DubboExceptionFilter

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.wf2311.jclipper</groupId>
+        <artifactId>jclipper</artifactId>
+        <version>2022.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>jclipper-framework-parent</artifactId>
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <jclipper.version>2022.1-SNAPSHOT</jclipper.version>
+        <spring-boot.version>2.4.2</spring-boot.version>
+        <spring-cloud.version>2020.0.0</spring-cloud.version>
+        <alibaba-cloud.version>2021.1</alibaba-cloud.version>
+        <netty.version>4.1.58.Final</netty.version>
+        <nacos.client.version>2.0.3</nacos.client.version>
+        <dubbo.version>2.7.12</dubbo.version>
+        <lombok.version>1.18.12</lombok.version>
+        <swagger.version>1.6.1</swagger.version>
+        <guava.version>28.2-jre</guava.version>
+        <!--        <springfox.version>2.9.2</springfox.version>-->
+        <elasticsearch.version>6.5.4</elasticsearch.version>
+        <arthas.version>3.5.3</arthas.version>
+
+        <apache.log4j.version>2.17.0</apache.log4j.version>
+    </properties>
+
+    <modules>
+        <module>../jclipper-alert-notice</module>
+        <module>../jclipper-common</module>
+        <module>../jclipper-mybatis-plus-extend</module>
+        <module>../jclipper-spring-boot-starters</module>
+        <module>../jclipper-webapp-base</module>
+        <module>../jclipper-micrometer-extend</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${alibaba-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-client</artifactId>
+                <version>${nacos.client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-actuator</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>0.9.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>jclipper-common</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>lettuce-spring-boot-starter</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>swagger-spring-boot-starter</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>jclipper-alert-notice</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>klock-spring-boot-starter</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>xxl-job-spring-boot-starter</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>java-time-converter-spring-boot-starter</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>dynamic-arthas-spring-boot-starter</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>mongo-plus-spring-boot-starter</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>jclipper-mybatis-plus-extend</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>exception-handler-spring-boot-starter</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>jclipper-webapp-base</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.wf2311.jclipper</groupId>
+                <artifactId>jclipper-micrometer-extend</artifactId>
+                <version>${jclipper.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>2.2.0</version>
+            </dependency>
+
+            <!--    https://gitee.com/xiaoym/knife4j    -->
+            <dependency>
+                <groupId>com.github.xiaoymin</groupId>
+                <artifactId>knife4j-spring-boot-starter</artifactId>
+                <version>3.0.3</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-high-level-client</artifactId>
+                <version>${elasticsearch.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-client</artifactId>
+                <version>6.5.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.elasticsearch</groupId>
+                <artifactId>elasticsearch</artifactId>
+                <version>6.5.4</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.lmax</groupId>
+                <artifactId>disruptor</artifactId>
+                <version>3.4.4</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.76</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.taobao.arthas</groupId>
+                <artifactId>arthas-spring-boot-starter</artifactId>
+                <version>${arthas.version}</version>
+            </dependency>
+
+            <!--      apache.log4j      -->
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${apache.log4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-slf4j-impl</artifactId>
+                <version>${apache.log4j.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>log4j-core</artifactId>
+                <groupId>org.apache.logging.log4j</groupId>
+                <version>${apache.log4j.version}</version>
+            </dependency>
+            <dependency>
+                <artifactId>log4j-jul</artifactId>
+                <groupId>org.apache.logging.log4j</groupId>
+                <version>${apache.log4j.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>

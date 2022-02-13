@@ -1,0 +1,2 @@
+providerMonitorFilter=jclipper.micrometer.extend.metrics.dubbo.DubboProviderMonitorFilter
+consumerMonitorFilter=jclipper.micrometer.extend.metrics.dubbo.DubboConsumerMonitorFilter

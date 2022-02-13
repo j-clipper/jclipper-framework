@@ -1,0 +1,38 @@
+ACCOUNT_EMAIL_EXIST: 此邮箱已注册，请更换其它邮箱
+ACCOUNT_FORMAT_ERROR: 帐号格式有误，请重新输入
+ACCOUNT_MOBILE_EXIST: 此手机号已注册，请更换其它手机号
+ACCOUNT_MODIFY_ERROR: 帐号修改失败，请重试
+ACCOUNT_NAME_EXIST: 该用户名已存在，请更换其他用户名
+ACCOUNT_NORMAL_ERROR: 您的帐号被锁定，请联系客服处理
+ACCOUNT_NOT_EXIST: 该帐号不存在，请重试或先注册帐号
+ACCOUNT_PASSWORD_ERROR: 密码与帐号不匹配，请重试
+AUTH_CODE_EMPTY_ERROR: 验证码不能为空
+AUTH_CODE_SEND_FAIL: 验证码发送失败，请重试
+AUTH_CODE_VERIFY_ERROR: 验证码输入有误，请重试
+BIND_EMAIL_EXIST: 该邮箱已绑定过其他帐号，不能重复绑定哦
+BIND_ERROR: 帐号绑定失败，请稍后重试
+BIND_MOBILE_EXIST: 该手机号已绑定过其他帐号，不能重复绑定哦
+CODE_SEND_RATE_ERROR: 发送太频繁，请重试
+CODE_TRY_TIMES_ERROR: 验证码错误次数太多，请重新获取
+CONCURRENCY_LOCK: 请求资源被锁定，请稍后再试
+EMAIL_FORMAT_ERROR: 邮箱格式有误，请重新输入
+FORBIDDEN: 权限不够，请确认
+IMAGE_CODE_ERROR: 图形验证码生成失败，请重试
+JWT_EXPIRED_ERROR: Token 已过期，请重新登录
+JWT_INVALID_ERROR: Token 无效，请重新登录
+LOGIN_FAIL: 登录失败，请稍后重试
+LOGIN_STATUS_EXPIRE: 您的账号在其他地方被登录，请重新登录
+LOGIN_TOKEN_IS_UPDATE: 身份验证无效，请重新登录
+LOGIN_TRY_TIMES_ERROR: 登录出错次数太多
+METHOD_NOT_ALLOWED: 请求方法错误，请确认
+METHOD_NOT_SUPPORTED: Method 不支持，请确认
+MOBILE_FORMAT_ERROR: 手机号格式有误，请重新输入
+PASSWORD_FORMAT_ERROR: 密码不符合规范，请重新输入
+PASSWORD_RESET_ERROR: 密码重置失败，请重试
+REGISTER_FAIL: 注册失败，请稍后重试
+REPEAT_LOGIN_ERROR: 此帐号已在其它地方登录，请确认
+REQUEST_PARAM_ERROR: 请求参数不符合，请确认
+SOCIAL_TYPE_ERROR: 社交平台类型不匹配，请核实
+SYSTEM_ERROR: 服务器异常
+TOO_MANY_REQUESTS: 因为访问频繁，你已经被限制访问，稍后重试
+UNAUTHORIZED: 身份验证无效，请登录
