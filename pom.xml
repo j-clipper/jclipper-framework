@@ -28,17 +28,18 @@
         <module>jclipper-framework-parent</module>
     </modules>
 
+    <!--仓库-->
     <distributionManagement>
+        <!--快照库-->
         <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <name>Team Nexus Snapshot Repository</name>
-            <url>http://192.168.20.62:8080/nexus/content/repositories/snapshots/</url>
-            <uniqueVersion>false</uniqueVersion>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+        <!--正式库-->
         <repository>
-            <id>nexus-release</id>
-            <name>Team Nexus Release Repository</name>
-            <url>http://192.168.20.62:8080/nexus/content/repositories/releases/</url>
+            <id>ossrh</id>
+            <name>Maven Central Staging Repository</name>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
 
