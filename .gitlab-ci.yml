@@ -1,0 +1,21 @@
+stages:  #这是 Gitlab CI 中的概念，Stages 表示构建阶段，就是一些按序执行的流程，具体执行是依赖于 Jobs 的
+  - mvn install
+  - mvn deploy
+maven-install:
+  stage: mvn install
+  tags:
+    - jclipper
+  script:
+    - mvn -DskipTests clean install
+  only:
+    - /^dev-.*/
+
+maven-deploy:
+  stage: mvn deploy
+  tags:
+    - jclipper
+  script:
+    - mvn -DskipTests clean deploy
+  except:
+    - /^dev.*/
+
