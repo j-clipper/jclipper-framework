@@ -17,6 +17,7 @@ import org.springframework.cloud.client.CommonsClientAutoConfiguration;
 import org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.core.env.Environment;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 
@@ -30,13 +31,11 @@ import java.time.format.DateTimeFormatter;
 @Configuration
 @ConditionalOnNacosDiscoveryEnabled
 @AutoConfigureBefore({SimpleDiscoveryClientAutoConfiguration.class, CommonsClientAutoConfiguration.class})
-@Getter
-@Setter
 public class NacosCustomDiscoveryClientConfiguration {
 
 
     @Bean
-    @ConditionalOnMissingBean
+    @Primary
     @ConditionalOnProperty(value = "spring.cloud.nacos.discovery.watch.enabled", matchIfMissing = true)
     public NacosWatch nacosWatch(NacosServiceManager nacosServiceManager,
                                  NacosDiscoveryProperties nacosDiscoveryProperties,
