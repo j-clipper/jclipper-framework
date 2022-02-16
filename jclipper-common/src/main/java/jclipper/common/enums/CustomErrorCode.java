@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CustomErrorCode implements BaseErrorCode {
-    private int code;
+    private Integer code;
 
     private String name;
 

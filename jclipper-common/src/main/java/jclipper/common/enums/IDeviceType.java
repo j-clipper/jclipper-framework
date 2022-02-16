@@ -6,7 +6,7 @@ package jclipper.common.enums;
  * @author <a href="mailto:wf2311@163.com">wf2311</a>
  * @since 2020/9/9 11:00.
  */
-public interface IDeviceType extends BaseCode<Integer, String> {
+public interface IDeviceType extends BaseEnum<Integer, String> {
 
     String DEVICE = "device";
 

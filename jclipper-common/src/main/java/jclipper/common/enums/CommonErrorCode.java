@@ -27,13 +27,13 @@ public enum CommonErrorCode implements BaseErrorCode {
     ;
 
 
-    private int code;
+    private final int code;
 
-    private String name;
+    private final String name;
 
 
     @Override
-    public int getCode() {
+    public Integer getCode() {
         return code;
     }
 

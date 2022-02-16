@@ -11,7 +11,7 @@ import java.awt.*;
  * @time 2016 /08/12 21:16.
  */
 @Getter
-public enum ColorCode implements BaseCode<Integer, String> {
+public enum ColorCode implements BaseEnum<Integer, String> {
     /**
      * The White.
      */

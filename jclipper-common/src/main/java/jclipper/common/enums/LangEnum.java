@@ -10,7 +10,7 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
-public enum LangEnum implements BaseCode<String, String> {
+public enum LangEnum implements BaseEnum<String, String> {
 
     CN("cn", "中文"),
     ZH_CN("zh_cn", "中文"),

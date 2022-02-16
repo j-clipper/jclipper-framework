@@ -10,7 +10,7 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
-public enum HeaderEnum implements BaseCode<String, String> {
+public enum HeaderEnum implements BaseEnum<String, String> {
     /**
      *
      */
@@ -26,11 +26,11 @@ public enum HeaderEnum implements BaseCode<String, String> {
      * * 编码
      **/
     @ApiModelProperty(value = "编码")
-    private String code;
+    private final String code;
 
     /**
      * * 名称
      **/
     @ApiModelProperty(value = "名称")
-    private String name;
+    private final String name;
 }
